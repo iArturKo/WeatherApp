@@ -88,3 +88,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+Weather.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Weather.xcworkspace/contents.xcworkspacedata
+Weather.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
