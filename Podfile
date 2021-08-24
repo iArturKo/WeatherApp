@@ -8,5 +8,6 @@ target 'Weather' do
   # Pods for Weather
   pod 'RxSwift', '~> 6.2'
   pod 'RxCocoa', '~> 6.2'
-
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
 end

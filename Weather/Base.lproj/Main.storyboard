@@ -329,7 +329,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="b5W-gd-t7h" firstAttribute="centerX" secondItem="dCQ-TA-TRL" secondAttribute="centerX" id="4MC-Ld-CXX"/>
                                     <constraint firstItem="b5W-gd-t7h" firstAttribute="centerY" secondItem="dCQ-TA-TRL" secondAttribute="centerY" id="Hvh-0f-aXG"/>
@@ -492,9 +492,6 @@
         <image name="wind" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

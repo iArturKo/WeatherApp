@@ -22,6 +22,7 @@
 		13BA7176266F5D9B004A6B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BA7174266F5D9B004A6B30 /* Main.storyboard */; };
 		13BA7178266F5D9B004A6B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BA7177266F5D9B004A6B30 /* Assets.xcassets */; };
 		13BA717B266F5D9B004A6B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BA7179266F5D9B004A6B30 /* LaunchScreen.storyboard */; };
+		13C898AB26D4F92200E8023B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13C898AA26D4F92200E8023B /* GoogleService-Info.plist */; };
 		13D17E9126B412F30036FDA8 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D17E9026B412F30036FDA8 /* MainCollectionViewCell.swift */; };
 		13D5CCA2266F899900E1F604 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5CCA1266F899900E1F604 /* JSONManager.swift */; };
 		13D5CCA4266F8CE700E1F604 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5CCA3266F8CE700E1F604 /* CollectionViewCell.swift */; };
@@ -52,6 +53,7 @@
 		13BA7177266F5D9B004A6B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13BA717A266F5D9B004A6B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13BA717C266F5D9B004A6B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C898AA26D4F92200E8023B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13D17E9026B412F30036FDA8 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		13D5CCA1266F899900E1F604 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		13D5CCA3266F8CE700E1F604 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				13BA7177266F5D9B004A6B30 /* Assets.xcassets */,
 				13BA7179266F5D9B004A6B30 /* LaunchScreen.storyboard */,
 				13BA717C266F5D9B004A6B30 /* Info.plist */,
+				13C898AA26D4F92200E8023B /* GoogleService-Info.plist */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				13BA7168266F5D9B004A6B30 /* Frameworks */,
 				13BA7169266F5D9B004A6B30 /* Resources */,
 				5B874A963A12DCDEA87ADC05 /* [CP] Embed Pods Frameworks */,
+				13C898AC26D4F9B700E8023B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -279,6 +283,7 @@
 			files = (
 				13BA717B266F5D9B004A6B30 /* LaunchScreen.storyboard in Resources */,
 				13F8EBCD267B5B5800222F7A /* Localizable.strings in Resources */,
+				13C898AB26D4F92200E8023B /* GoogleService-Info.plist in Resources */,
 				13BA7178266F5D9B004A6B30 /* Assets.xcassets in Resources */,
 				13BA7176266F5D9B004A6B30 /* Main.storyboard in Resources */,
 			);
@@ -287,6 +292,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13C898AC26D4F9B700E8023B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		5B874A963A12DCDEA87ADC05 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8KR6UV2QU5;
 				INFOPLIST_FILE = Weather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
